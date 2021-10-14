@@ -88,6 +88,10 @@ const inputProps = {
     default: true
   },
   autofocus: Boolean,
+  autocomplete: {
+    type: String,
+    default: 'off'
+  },
   inputProps: Object as PropType<TextareaHTMLAttributes | InputHTMLAttributes>,
   resizable: {
     type: Boolean,
@@ -884,6 +888,7 @@ export default defineComponent({
                 ref="textareaElRef"
                 class={`${mergedClsPrefix}-input__textarea-el`}
                 autofocus={this.autofocus}
+                autocomplete={this.autocomplete}
                 rows={Number(this.rows)}
                 placeholder={this.placeholder as string | undefined}
                 value={this.mergedValue as string | undefined}
@@ -949,6 +954,7 @@ export default defineComponent({
                 }
                 readonly={this.readonly as any}
                 autofocus={this.autofocus}
+                autocomplete={this.autocomplete}
                 size={this.attrSize}
                 style={this.textDecorationStyle[0] as any}
                 onBlur={this.handleInputBlur}
