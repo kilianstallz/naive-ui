@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Pending
+
+### Feats
+
+- `n-input` add `autocomplete` prop.
+
 ## 2.19.8 (2021-10-14)
 
 ### Fixes
